@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/page/head.ejs %>
+</head>
+<body>
+<% include partials/page/header.ejs %>
+<h2>Login</h2>
+<p>Please login below:</p>
+<form method="post" action="/users/login">
+    <div class="form-group">
+        <label>Username:</label>
+        <input class="form-control" name="username" type="text" placeholder="Enter Username" />
+        <label>Password</label>
+        <input class="form-control" name="password" type="password" placeholder="Enter Password" />
+        <input class="btn btn-primary" type="submit" name="Submit" value="Login" />
+    </div>
+</form>
+
+<% include partials/page/footer.ejs %>
+<% include partials/page/scripts.ejs %>
+</body>
+
+
+</html>

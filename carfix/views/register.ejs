@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/page/head.ejs %>
+</head>
+<body>
+    <% include partials/page/header.ejs %>
+    <h2>Register</h2>
+    <p>Please register using the form below:</p>
+    <form method="post" action="/users/register">
+        <div class="form-group">
+            <label>Name:</label>
+            <input class="form-control" name="name" type="text" placeholder="Enter Name..." />
+            <label>Email:</label>
+            <input class="form-control" name="email" type="email" placeholder="Enter Email..." />
+            <label>Username:</label>
+            <input class="form-control" name="username" type="text" placeholder="Create Username" />
+            <label>Password</label>
+            <input class="form-control" name="password" type="password" placeholder="Create Password" />
+            <label>Confirm Password</label>
+            <input class="form-control" name="password2" type="password" placeholder="Confirm Password" />
+            <input class="btn btn-primary" type="submit" name="Submit" value="Sign Up" />
+        </div>
+    </form>
+
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/scripts.ejs %>
+</body>
+
+
+</html>
